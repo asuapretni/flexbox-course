@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Capstone Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="brand">
+            <a href="#" class="icon" id="navHamburger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#" class="MyName">
+                MyName
+            </a>
+        </div>
+        <div class="links">
+
+            <div class="two_links">
+                <a href="#" class="link link1">Link 1</a>
+                <a href="#" class="link link2">Link 2</a>
+            </div>
+            <div class="one_link">
+                <a href="#" class="link link3">Link 3<a>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+    const links = document.querySelector('.links');
+    navHamburger.addEventListener('click', (e) => {
+        links.classList.toggle('links_active'); /* write the class without the point*/
+    })
+</script>
+
+</html>

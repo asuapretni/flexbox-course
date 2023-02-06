@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.container { 
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+@media (min-width: 768px) {
+    .MyName {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        color: antiquewhite;
+        text-decoration: none;
+    }
+    .link {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.two_links {
+    width: 80%;
+    display: flex;
+    cursor: pointer;
+}
+
+.one_link {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    height: 40px;
+    width: 100vw;    
+}
+.link:hover {
+    background-color: darkblue;   
+}
+
+ .icon {
+    display: none;
+ }
+}
+
+@media (max-width: 768px) {
+    .container { 
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+    }
+
+    .MyName {
+        display: flex;
+        text-decoration: none;
+        color: antiquewhite;
+    }
+
+    .links {
+        display: none;
+        cursor: pointer;
+    }
+
+    .links_active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        width: 100vw;
+        height: 40px;
+        background-color: lightgrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .link:hover {
+        color: antiquewhite;
+        background-color: darkblue;   
+    }
+   
+    .brand {
+        display: flex;
+        padding: 10px;
+        align-self: flex-start;
+    }
+
+    .brand a {
+        padding-left: 30px;
+    }
+
+    .icon {
+        color: antiquewhite;
+     } 
+  }
